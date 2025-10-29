@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindhu A - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info span {
+            color: #555;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #2563eb;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .executive-summary {
+            background: #f8fafc;
+            padding: 20px;
+            border-left: 4px solid #2563eb;
+            margin-bottom: 20px;
+        }
+        
+        .experience-item, .education-item, .certification-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .experience-item:last-child, .education-item:last-child, .certification-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .company {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        
+        .duration {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .location {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .job-description {
+            margin-top: 10px;
+        }
+        
+        .job-description ul {
+            margin-left: 20px;
+        }
+        
+        .job-description li {
+            margin-bottom: 5px;
+            color: #4b5563;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-category {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        
+        .skill-category h4 {
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .skill-tag {
+            background: #e5e7eb;
+            color: #374151;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+        
+        .project-item {
+            margin-bottom: 15px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .project-description {
+            color: #4b5563;
+            margin-top: 5px;
+        }
+        
+        .education-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #1f2937;
+        }
+        
+        .school {
+            color: #2563eb;
+        }
+        
+        .gpa {
+            color: #666;
+            font-weight: 600;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <div class="name">SINDHU A</div>
+            <div class="title">DevOps Engineer with 1+ years of experience in GitLab, Terraform, AWS, CI/CD & Docker</div>
+            <div class="contact-info">
+                <span>📧 im.sindhuu@gmail.com</span>
+                <span>📱 +91 7010233643</span>
+                <span>🔗 linkedin.com/in/sindhu5/</span>
+                <span>💻 gitlab.com/sinshine</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">EXECUTIVE SUMMARY</div>
+            <div class="executive-summary">
+                <p>Passionate about cloud infrastructure, automation, and system reliability, I bring hands-on experience in AWS, Linux, Terraform, Docker, CI/CD, and networking fundamentals. Skilled in troubleshooting, performance monitoring, and optimizing infrastructure, I thrive in roles that blend DevOps and network operations. I possess a solid understanding of routing, switching, firewall configuration, and infrastructure monitoring tools. With a focus on continuous improvement and collaboration, I aim to contribute to building secure, scalable, and high-performing IT environments.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">WORK EXPERIENCE</div>
+            
+            <div class="experience-item">
+                <div class="job-title">Junior DevOps Engineer</div>
+                <div class="company">KLOUDTOM CONSULTING SERVICES</div>
+                <div class="duration">July 2024 – Present</div>
+                <div class="location">Bangalore, KA, India</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Provided production support and monitoring for multiple client applications, using AWS CloudWatch and SNS alerts to ensure high availability and minimal downtime.</li>
+                        <li>Automated provisioning and updates using Terraform, reducing manual configuration effort by 30%.</li>
+                        <li>Supported CI/CD deployments via GitLab pipelines, troubleshooting deployment errors in test and production environments.</li>
+                        <li>Collaborated with developers, QA, and business teams in an Agile environment, participating in daily scrums and sprint reviews.</li>
+                        <li>Investigated and resolved system incidents, implemented preventive measures, and created technical documentation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">DevOps Intern</div>
+                <div class="company">KLOUDTOM CONSULTING SERVICES</div>
+                <div class="duration">January 2024 – June 2024</div>
+                <div class="location">Bangalore, KA, India</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Built foundation in DevOps by working with AWS (EC2, IAM, S3, CloudWatch), Git/GitLab, Terraform, CI/CD, Docker, PostgreSQL, and Python.</li>
+                        <li>Supported daily DevOps tasks, tracked progress in Jira, and contributed to application deployments and automation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">DevOps Intern</div>
+                <div class="company">HYSAS TECHNOLOGIES</div>
+                <div class="duration">July 2023 – December 2023</div>
+                <div class="location">Tuticorin, TN, India</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Automated client resource management in a web application by integrating AWS DevOps practices, enabling client onboarding, job requirement tracking, interview scheduling, and email notifications.</li>
+                        <li>Leveraged automation to streamline workflows, reduce manual effort, and improve efficiency in client management processes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">TECHNICAL SKILLS</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>CLOUD & INFRASTRUCTURE</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (IAM, EC2, S3, VPC)</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">SNS</span>
+                        <span class="skill-tag">RDS</span>
+                        <span class="skill-tag">ELB</span>
+                        <span class="skill-tag">Auto Scaling</span>
+                        <span class="skill-tag">Route 53</span>
+                        <span class="skill-tag">Terraform</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>DEVOPS TOOLS</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitLab CI/CD</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">Docker Hub</span>
+                        <span class="skill-tag">Kubernetes</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>DATABASES</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>PROGRAMMING & SCRIPTING</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Shell</span>
+                        <span class="skill-tag">YAML</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>NETWORKING & VIRTUALIZATION</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VPC</span>
+                        <span class="skill-tag">Load Balancing</span>
+                        <span class="skill-tag">Auto Scaling</span>
+                        <span class="skill-tag">Security Groups</span>
+                        <span class="skill-tag">Subnets</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>MONITORING & AUTOMATION</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">SNS</span>
+                        <span class="skill-tag">Cron Jobs</span>
+                        <span class="skill-tag">Infrastructure as Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">PROJECTS</div>
+            
+            <div class="project-item">
+                <div class="project-title">Production Monitoring System (AWS + Python)</div>
+                <div class="project-description">Automated EC2 health checks, SNS alerts, and log monitoring for early detection of issues.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Infrastructure Automation (Terraform + AWS)</div>
+                <div class="project-description">Built and optimized cloud infrastructure for scalable deployments.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">SonarQube Deployment (Terraform + Docker + EC2)</div>
+                <div class="project-description">Automated CI/CD integration with code quality checks.</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Talent-Sync (Client Resource Management)</div>
+                <div class="project-description">MERN Stack / DevOps Automation / CI-CD / Email Integration</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            
+            <div class="education-item">
+                <div class="education-details">
+                    <div>
+                        <div class="degree">B.E. Computer Science and Engineering</div>
+                        <div class="school">IFET College Of Engineering</div>
+                    </div>
+                    <div class="gpa">May 2024 | CGPA: 8.98</div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-details">
+                    <div>
+                        <div class="degree">HSC</div>
+                        <div class="school">St.Marys's.Mat.Hr.Sec.School</div>
+                    </div>
+                    <div class="gpa">March 2020 | 68%</div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-details">
+                    <div>
+                        <div class="degree">SSLC</div>
+                        <div class="school">St.Marys's.Mat.Hr.Sec.School</div>
+                    </div>
+                    <div class="gpa">March 2018 | 78.2%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">CERTIFICATIONS</div>
+            
+            <div class="certification-item">
+                <div class="project-title">AWS Certified Cloud Practitioner</div>
+                <div class="project-description">GeekforGeeks</div>
+            </div>
+
+            <div class="certification-item">
+                <div class="project-title">Python Full Course</div>
+                <div class="project-description">GeekforGeeks</div>
+            </div>
+
+            <div class="certification-item">
+                <div class="project-title">Google Data Analytics</div>
+                <div class="project-description">Coursera</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">LANGUAGES</div>
+            <div class="project-description">
+                <strong>English:</strong> Fluent | <strong>German:</strong> Beginner (A1) | <strong>Tamil:</strong> Native
+            </div>
+        </div>
+    </div>
+</body>
+</html>
