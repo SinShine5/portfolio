@@ -187,7 +187,7 @@ style.textContent = `
 .btn { position: relative; overflow: hidden; }
 .ripple { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.6); transform: scale(0); animation: ripple-animation 0.6s linear; pointer-events: none; }
 @keyframes ripple-animation { to { transform: scale(4); opacity: 0; } }
-.nav-link.active { color: #2563eb; }
+.nav-link.active { color: #60a5fa; }
 .nav-link.active::after { width: 100%; }
 `;
 document.head.appendChild(style);
